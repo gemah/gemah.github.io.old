@@ -1,0 +1,40 @@
+/* ~Arquivo de Estilo~ */
+/* Autor: Hian Neiva */
+
+@font-face{
+	font-family: 'MSX';
+	src: url('MSXFont.ttf');
+}
+
+body{
+	font-family: 'MSX', 'Courier New', 'monospace';
+	font-size: medium;
+	color: #fff;
+	background-color: #22f;
+}
+
+#menu {
+	/* Borda do bloco de Menu */
+	border-style: solid;
+	border-color: #68f;
+	/* Alinhamento do texto no menu */
+	text-align: center;
+	/* Padding dentro do bloco */
+	padding: 0px 10px 8px 10px;
+	/* Cor de fundo do menu */
+	background-color: #22f;
+	/* Deinição de característica "sempre presente" por posição*/
+	position: fixed;
+	/* Alinhamento vertical*/
+	vertical-align: bottom;
+
+}
+
+a:link {color: #f4f;}
+a:visited {color: #ff0;}
+a:hover {color: #f00;}
+a:focus {color: #f00;}
+a:active {color: #0f0;}
+
+h1{font-size: 150%};
+h2{font-size: 120%};
