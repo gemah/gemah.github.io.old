@@ -11,44 +11,92 @@ body{
 	margin: 0px;
 	border-style: solid;
 	border-width: 32px;
-	border-color: #68f;
+	border-color: #8076F1;
 	padding: 16px;
 	font-family: 'MSX', 'Courier New', 'monospace';
 	font-size: medium;
 	color: #fff;
-	background-color: #22f;
+	background-color: #5955E0;
 }
 
 #menu {
 	/* Alinhamento horiontal*/
-	left: 50%;
-	margin-left: -192px;
+	right: 48px;
 	/* Largura */
-	width: 384px;
+	width: 128px;
 	/* Borda do bloco de Menu */
 	border-style: solid;
 	border-width: 32px;
-	border-color: #68f;
+	border-color: #8076F1;
 	/* Alinhamento do texto no menu */
 	text-align: center;
 	/* Padding dentro do bloco */
 	padding: 0px 10px 8px 10px;
 	/* Cor de fundo do menu */
-	background-color: #22f;
+	background-color: #5955E0;
 	/* Deinição de característica "sempre presente" por posição*/
 	position: fixed;
 }
 
 #inicio{
 	/* Margem */
-	margin-top: 160px;
+	margin-top: 256px;
 }
 
-a:link {color: #f4f;}
-a:visited {color: #ff0;}
-a:hover {color: #f00;}
-a:focus {color: #f00;}
-a:active {color: #0f0;}
+.hoverable:link {color: #CCC35E;}
+.hoverable:visited {color: #65DBEF;}
+.hoverable:hover {color: #FF897D;}
+.hoverable:focus {color: #FF897D;}
+.hoverable:active {color: #DB6559;}
 
 h1 {font-size: 150%};
 h2 {font-size: 120%};
+
+.dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 
+		   com prresença de outra classe anteror */}
+
+.mstop{
+	display: inline-block;
+	background: url('img/menusprite.png') no-repeat -58px -53px;
+	width: 48px;
+	height: 48px;
+	padding-bottom: 5px;
+}
+.mstop:hover{
+	background: url('img/menuhover.png') no-repeat -58px -53px;
+}
+
+.msproj{
+	display: inline-block;
+	background: url('img/menusprite.png') no-repeat -5px -53px;
+	width: 48px;
+	height: 48px;
+	padding-bottom: 5px;
+}
+.msproj:hover{
+	background: url('img/menuhover.png') no-repeat -5px -53px;
+}
+
+.mscv{
+	display: inline-block;
+	background: url('img/menusprite.png') no-repeat -5px 0;
+	width: 48px;
+	height: 48px;
+}
+.mscv:hover{
+	background: url('img/menuhover.png') no-repeat -5px 0;
+}
+
+.mscontact{
+	display: inline-block;
+	background: url('img/menusprite.png') no-repeat -58px 0;
+	width: 48px;
+	height: 48px;
+}
+.mscontact:hover{
+	background: url('img/menuhover.png') no-repeat -58px 0;
+}
+
+.leftspace{
+	width: calc(100% - 220px);
+}
