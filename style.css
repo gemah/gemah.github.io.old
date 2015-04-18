@@ -20,8 +20,10 @@ body{
 }
 
 #menu {
-	/* Alinhamento horiontal*/
+	/* Alinhamento*/
 	right: 48px;
+	top: 50%;
+	margin-top: -90px;
 	/* Largura */
 	width: 128px;
 	/* Borda do bloco de Menu */
@@ -36,11 +38,6 @@ body{
 	background-color: #5955E0;
 	/* Deinição de característica "sempre presente" por posição*/
 	position: fixed;
-}
-
-#inicio{
-	/* Margem */
-	margin-top: 256px;
 }
 
 .hoverable:link {color: #CCC35E;}
