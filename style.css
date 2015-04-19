@@ -9,38 +9,207 @@
 
 body{
 	margin: 0px;
-	border-style: solid;
-	border-width: 32px;
-	border-color: #8076F1;
-	padding: 16px;
+	padding: 48px;
 	font-family: 'MSX', 'Courier New', 'monospace';
 	font-size: medium;
 	color: #fff;
 	background-color: #5955E0;
 }
 
-#menu {
-	/* Alinhamento*/
-	right: 48px;
-	top: 50%;
-	margin-top: -90px;
-	/* Largura */
-	width: 128px;
-	/* Borda do bloco de Menu */
-	border-style: solid;
-	border-width: 32px;
-	border-color: #8076F1;
-	/* Alinhamento do texto no menu */
-	text-align: center;
-	/* Padding dentro do bloco */
-	padding: 0px 10px 8px 10px;
-	/* Cor de fundo do menu */
-	background-color: #5955E0;
-	/* Deinição de característica "sempre presente" por posição*/
-	position: fixed;
+@media (max-width: 99999px) {
+	#menu {
+		/* Alinhamento*/
+		right: 48px;
+		top: 45%;
+		margin-top: -90px;
+		/* Largura */
+		width: 128px;
+		/* Borda do bloco de Menu */
+		border-style: solid;
+		border-width: 32px;
+		border-color: #8076F1;
+		/* Alinhamento do texto no menu */
+		text-align: center;
+		/* Padding dentro do bloco */
+		padding: 0px 10px 8px 10px;
+		/* Cor de fundo do menu */
+		background-color: #5955E0;
+		/* Deinição de característica "sempre presente" por posição*/
+		position: fixed;
+	}
+
+	#proj{
+		background: #B766B5;
+		margin: 0 -48px 0 -48px;
+		padding: 0 268px 16px 48px;
+		outline: #B766B5 solid 16px;
+	}
+
+	#curriculum{
+		background: #3AA241;
+		margin: 0 -48px 0 -48px;
+		padding: 0 268px 16px 48px;
+		outline: #3AA241 solid 16px;
+	}
+
+	#contact{
+		color: #000;
+		background: #CCC35E;
+		margin: 0 -48px 0 -48px;
+		padding: 0 268px 16px 48px;
+		outline: #CCC35E solid 16px;
+	}
+
+	.leftspace{
+		padding-right: 220px;
+	}
+
+	.dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 
+			   com prresença de outra classe anteror */}
+
+	.mstop{
+		display: inline-block;
+		background: url('img/menusprite.png') no-repeat -58px -58px;
+		width: 48px;
+		height: 48px;
+		padding-bottom: 5px;
+	}
+	.mstop:hover{
+		background: url('img/menuhover.png') no-repeat -58px -58px;
+	}
+
+	.msproj{
+		display: inline-block;
+		background: url('img/menusprite.png') no-repeat -5px -58px;
+		width: 48px;
+		height: 48px;
+		padding-bottom: 5px;
+	}
+	.msproj:hover{
+		background: url('img/menuhover.png') no-repeat -5px -58px;
+	}
+
+	.mscv{
+		display: inline-block;
+		background: url('img/menusprite.png') no-repeat -5px -5px;
+		width: 48px;
+		height: 48px;
+	}
+	.mscv:hover{
+		background: url('img/menuhover.png') no-repeat -5px -5px;
+	}
+
+	.mscontact{
+		display: inline-block;
+		background: url('img/menusprite.png') no-repeat -58px -5px;
+		width: 48px;
+		height: 48px;
+	}
+	.mscontact:hover{
+		background: url('img/menuhover.png') no-repeat -58px -5px;
+	}
+
 }
 
-.hoverable:link {color: #CCC35E;}
+@media (max-width: 720px) {
+	#menu {
+		/* Alinhamento*/
+		left: 50%;
+		top: 96px;
+		margin-left: -192px;
+		/* Largura */
+		width: 288px;
+		/* Borda do bloco de Menu */
+		border-style: solid;
+		border-width: 32px;
+		border-color: #8076F1;
+		/* Alinhamento do texto no menu */
+		text-align: center;
+		/* Padding dentro do bloco */
+		padding: 0px 10px 8px 10px;
+		/* Cor de fundo do menu */
+		background-color: #5955E0;
+		/* Deinição de característica "sempre presente" por posição*/
+		position: fixed;
+	}
+
+	#top{
+		margin-top: 208px;
+	}
+
+	#proj{
+		background: #B766B5;
+		margin: 0 -48px 0 -48px;
+		padding: 0 48px 16px 48px;
+		outline: #B766B5 solid 16px;
+	}
+
+	#curriculum{
+		background: #3AA241;
+		margin: 0 -48px 0 -48px;
+		padding: 0 48px 16px 48px;
+		outline: #3AA241 solid 16px;
+	}
+
+	#contact{
+		color: #000;
+		background: #CCC35E;
+		margin: 0 -48px 0 -48px;
+		padding: 0 48px 16px 48px;
+		outline: #CCC35E solid 16px;
+	}
+
+	.dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 
+		   com prresença de outra classe anteror */}
+
+	.mstop{
+		display: inline-block;
+		background: url('img/menusprite64.png') no-repeat -77px -77px;
+		height: 64px;
+		width: 64px;
+		padding-bottom: 0;
+	}
+	.mstop:hover{
+		background: url('img/menuhover64.png') no-repeat -77px -77px;
+	}
+
+	.msproj{
+		display: inline-block;
+		background: url('img/menusprite64.png') no-repeat -6px -77px;
+		width: 64px;
+		height: 64px;
+		padding-bottom: 0;
+	}
+	.msproj:hover{
+		background: url('img/menuhover64.png') no-repeat -6px -77px;
+	}
+
+	.mscv{
+		display: inline-block;
+		background: url('img/menusprite64.png') no-repeat -6px -6px;
+		width: 64px;
+		height: 64px;
+	}
+	.mscv:hover{
+		background: url('img/menuhover64.png') no-repeat -6px -6px;
+	}
+
+	.mscontact{
+		display: inline-block;
+		background: url('img/menusprite64.png') no-repeat -77px -6px;
+		width: 64px;
+		height: 64px;
+	}
+	.mscontact:hover{
+		background: url('img/menuhover64.png') no-repeat -77px -6px;
+	}
+	.leftspace{
+		width: 100%;
+	}
+}
+
+.hoverable:link {color: #65DBEF;}
+#contact .hoverable:link {color:#5955E0;}
 .hoverable:visited {color: #65DBEF;}
 .hoverable:hover {color: #FF897D;}
 .hoverable:focus {color: #FF897D;}
@@ -48,52 +217,3 @@ body{
 
 h1 {font-size: 150%};
 h2 {font-size: 120%};
-
-.dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 
-		   com prresença de outra classe anteror */}
-
-.mstop{
-	display: inline-block;
-	background: url('img/menusprite.png') no-repeat -58px -53px;
-	width: 48px;
-	height: 48px;
-	padding-bottom: 5px;
-}
-.mstop:hover{
-	background: url('img/menuhover.png') no-repeat -58px -53px;
-}
-
-.msproj{
-	display: inline-block;
-	background: url('img/menusprite.png') no-repeat -5px -53px;
-	width: 48px;
-	height: 48px;
-	padding-bottom: 5px;
-}
-.msproj:hover{
-	background: url('img/menuhover.png') no-repeat -5px -53px;
-}
-
-.mscv{
-	display: inline-block;
-	background: url('img/menusprite.png') no-repeat -5px 0;
-	width: 48px;
-	height: 48px;
-}
-.mscv:hover{
-	background: url('img/menuhover.png') no-repeat -5px 0;
-}
-
-.mscontact{
-	display: inline-block;
-	background: url('img/menusprite.png') no-repeat -58px 0;
-	width: 48px;
-	height: 48px;
-}
-.mscontact:hover{
-	background: url('img/menuhover.png') no-repeat -58px 0;
-}
-
-.leftspace{
-	width: calc(100% - 220px);
-}
