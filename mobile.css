@@ -25,14 +25,34 @@ body{
 	display:none;
 }
 
+@media all and (orientation:portrait) {
+    #menubottom{ 
+    	height: 128px;
+    	left: 50%;
+		bottom: 0px;
+    	width: 292px;
+    }
+}
+@media all and (orientation:landscape) {
+    #menubottom{ 
+    	height: 332px;
+    	right: -5%;
+    	bottom: -30%;
+    	width: 72px;
+    	-ms-transform: scale(0.5,0.5); /* IE 9 */
+    	-webkit-transform: scale(0.5,0.5); /* Safari */
+    	transform: scale(0.5,0.5);
+    }
+}
+
 #menubottom {
 	display: block;
 	/* Alinhamento*/
-	left: 50%;
-	bottom: 0px;
+	/*left: 50%;*/
+	/*bottom: 0px;*/
 	margin-left: -188px;
 	/* Largura */
-	width: 292px;
+	/*width: 292px;*/
 	/* Borda do bloco de Menu */
 	border-style: solid;
 	border-width: 32px;
