@@ -1,6 +1,6 @@
 /* ~Arquivo de Estilo~ */
 /* Autor: Hian Neiva */
-/* Motivação do estilo: MSX aesthetics */
+/* Motivação do estilo: Responsividade considerando ambiente móvel */
 
 @font-face{
 	font-family: 'MSX';
@@ -17,19 +17,22 @@ body{
 }
 
 #outer{
-	width: 100%;
-	border: #65DBEF solid 32px;
-	box-sizing: border-box;
+	border-style: hidden;
+	border-width: 0px;
 }
 
-#menutop {
+#menutop{
+	display:none;
+}
+
+#menubottom {
 	display: block;
 	/* Alinhamento*/
-	right: 32px;
-	top: 45%;
-	margin-top: -90px;
+	left: 50%;
+	bottom: 0px;
+	margin-left: -188px;
 	/* Largura */
-	width: 128px;
+	width: 292px;
 	/* Borda do bloco de Menu */
 	border-style: solid;
 	border-width: 32px;
@@ -44,79 +47,77 @@ body{
 	position: fixed;
 }
 
-#menubottom{
-	display: none;
+#top{
+	margin-top: 0px;
 }
 
 #proj{
 	background: #B766B5;
-	margin: -8px 0 0 0;
-	padding: 16px 268px 32px 48px;
-	/*outline: #B766B5 solid 16px;*/
+	margin: 0 -16px 0 0;
+	padding: 16px;
 }
 
 #curriculum{
 	background: #3AA241;
-	margin: -24px 0 0 0;
-	padding: 16px 268px 48px 48px;
-	/*outline: #3AA241 solid 16px;*/
+	margin: 0 -16px 0 0;
+	padding: 16px;
 }
 
 #contact{
 	color: #000;
 	background: #CCC35E;
-	margin: -24px 0 0 0;
-	padding: 16px 268px 16px 48px;
-	/*outline: #CCC35E solid 16px;*/
+	margin: 0 -16px 0 0;
+	padding: 16px 16px 208px 16px;
 }
 
 #leftspace{
-	padding: 16px 268px 0px 48px;
+	margin: -24px 0 0 0;
+	padding: 16px;
 }
 
 .dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 
-		   com prresença de outra classe anteror */}
+	   com prresença de outra classe anteror */}
 
 .mstop{
 	display: inline-block;
-	background: url('img/menusprite.png') no-repeat -58px -58px;
-	width: 48px;
-	height: 48px;
-	padding-bottom: 5px;
+	background: url('img/menusprite64.png') no-repeat -77px -77px;
+	height: 64px;
+	width: 64px;
+	padding-bottom: 0;
 }
 .mstop:hover{
-	background: url('img/menuhover.png') no-repeat -58px -58px;
+	background: url('img/menuhover64.png') no-repeat -77px -77px;
 }
 
 .msproj{
 	display: inline-block;
-	background: url('img/menusprite.png') no-repeat -5px -58px;
-	width: 48px;
-	height: 48px;
-	padding-bottom: 5px;
+	background: url('img/menusprite64.png') no-repeat -6px -77px;
+	width: 64px;
+	height: 64px;
+	padding-bottom: 0;
 }
 .msproj:hover{
-	background: url('img/menuhover.png') no-repeat -5px -58px;
+	background: url('img/menuhover64.png') no-repeat -6px -77px;
 }
 
 .mscv{
 	display: inline-block;
-	background: url('img/menusprite.png') no-repeat -5px -5px;
-	width: 48px;
-	height: 48px;
+	background: url('img/menusprite64.png') no-repeat -6px -6px;
+	width: 64px;
+	height: 64px;
 }
 .mscv:hover{
-	background: url('img/menuhover.png') no-repeat -5px -5px;
+	background: url('img/menuhover64.png') no-repeat -6px -6px;
 }
 
 .mscontact{
 	display: inline-block;
-	background: url('img/menusprite.png') no-repeat -58px -5px;
-	width: 48px;
-	height: 48px;
+	background: url('img/menusprite64.png') no-repeat -77px -6px;
+	width: 64px;
+	height: 64px;
 }
 .mscontact:hover{
-	background: url('img/menuhover.png') no-repeat -58px -5px;
+	background: url('img/menuhover64.png') no-repeat -77px -6px;
 }
 
 .hoverable:link {color: #65DBEF;}
