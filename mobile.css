@@ -140,6 +140,16 @@ body{
 	background: url('img/menuhover64.png') no-repeat -77px -6px;
 }
 
+.imgTitle{
+    display:none;
+}
+.imgTMob{
+    display:block;
+    left: 50%;
+    margin-left: -128px;
+    position: relative;
+}
+
 .hoverable:link {color: #65DBEF;}
 #contact .hoverable:link {color:#5955E0;}
 .hoverable:visited {color: #65DBEF;}
