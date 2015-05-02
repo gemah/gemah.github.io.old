@@ -130,6 +130,42 @@ body{
     display:none;
 }
 
+.sprite-fb-icon {
+	background-image: url('img/social-icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-position: 0 0;
+}
+
+.sprite-linkedin-icon {
+	background-image: url('img/social-icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-position: -64px 0;
+}
+
+.sprite-steam-icon {
+	background-image: url('img/social-icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-position: 0 -64px;
+}
+
+.sprite-tumblr-icon {
+	background-image: url('img/social-icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-position: -64px -64px;
+}
+
 .hoverable:link {color: #65DBEF;}
 #contact .hoverable:link {color:#5955E0;}
 .hoverable:visited {color: #65DBEF;}
