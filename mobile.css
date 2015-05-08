@@ -27,7 +27,7 @@ body{
 
 @media all and (orientation:portrait) {
     #menubottom{ 
-    	height: 128px;
+    	height: 64px;
     	left: 50%;
 		bottom: 0px;
     	width: 292px;
@@ -35,13 +35,10 @@ body{
 }
 @media all and (orientation:landscape) {
     #menubottom{ 
-    	height: 332px;
-    	right: -5%;
-    	bottom: -30%;
-    	width: 72px;
-    	-ms-transform: scale(0.5,0.5); /* IE 9 */
-    	-webkit-transform: scale(0.5,0.5); /* Safari */
-    	transform: scale(0.5,0.5);
+    	height: 64px;
+    	right: 0%;
+		bottom: 0px;
+    	width: 292px;
     }
 }
 
@@ -50,17 +47,17 @@ body{
 	/* Alinhamento*/
 	/*left: 50%;*/
 	/*bottom: 0px;*/
-	margin-left: -188px;
+	margin-left: -170px;
 	/* Largura */
 	/*width: 292px;*/
 	/* Borda do bloco de Menu */
 	border-style: solid;
-	border-width: 32px;
+	border-width: 16px;
 	border-color: #8076F1;
 	/* Alinhamento do texto no menu */
 	text-align: center;
 	/* Padding dentro do bloco */
-	padding: 0px 10px 8px 10px;
+	padding: 8px 8px 8px 8px;
 	/* Cor de fundo do menu */
 	background-color: #5955E0;
 	/* Deinição de característica "sempre presente" por posição*/
@@ -87,12 +84,19 @@ body{
 	color: #000;
 	background: #CCC35E;
 	margin: 0 -16px 0 0;
-	padding: 16px 16px 208px 16px;
+	padding: 16px 16px 128px 16px;
 }
 
 #leftspace{
 	margin: -24px 0 0 0;
 	padding: 16px;
+}
+
+#mapa{
+	width: 256px;
+	height: 192px;
+	box-sizing: border-box;
+	margin-top:8px;
 }
 
 .dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 

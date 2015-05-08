@@ -75,6 +75,13 @@ body{
 	padding: 16px 268px 0px 48px;
 }
 
+#mapa{
+	width: 640px;
+	height: 300px;
+	box-sizing: border-box;
+	margin-top:20px;
+}
+
 .dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 
 		   com prresença de outra classe anteror */}
 
@@ -122,8 +129,7 @@ body{
 
 .imgTitle{
     display:block;
-    left: 50%;
-    margin-left: -128px;
+    left: 0;
     position: relative;
 }
 .imgTMob{
@@ -173,5 +179,5 @@ body{
 .hoverable:focus {color: #FF897D;}
 .hoverable:active {color: #DB6559;}
 
-h1 {font-size: 150%};
-h2 {font-size: 120%};
+h1 {font-size: 150%;}
+h2 {font-size: 120%;}

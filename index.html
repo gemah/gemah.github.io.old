@@ -11,7 +11,7 @@
 		<meta name = "author" content="Hian Neiva">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" media="screen and (max-width: 9999px)" href="style.css">
-		<link rel="stylesheet" media="handheld, screen and (max-width: 720px)" href="mobile.css">
+		<link rel="stylesheet" media="handheld, screen and (max-width: 800px)" href="mobile.css">
 		<title>GEMAH ~ Personal Webpage</title>
 	</head>
 
@@ -19,7 +19,7 @@
 
 		<div id="outer">
 			<div id="menutop">
-				<h2>Menu</h2>
+				<h2 class="hideable">Menu</h2>
 				<a href="#top"><div class="mstop"></div></a>
 				<a href="#projeto"><div class="msproj"></div></a>
 				<a href="#curriculo"><div class="mscv"></div></i></a>
@@ -83,9 +83,6 @@
 				<!--CURRICULUM-->
 
 				<a name="curriculo"><h2>Currículo</h2></a>
-
-				<p>Profissional Contact and Resumé details goes here...</p>
-
 				<a class="hoverable" href="src/cvHianNeiva.pdf" target="_top">Currículo integral</a>
 				<br>
 			</div>
@@ -96,18 +93,22 @@
 				<a name="contato"><h2>Contato</h2></a>
 
 				<a class="hoverable" href="mailto:hianneiva@gmail.com">E-mail</a>
-
-				<p>[Map of studying place placeholder]</p>
+				<p>Abaixo você pode verificar no mapa onde eu moro.</p>
+				<p id="alert"></p>
+				<div id="mapa"></div>
 			</div>
 
 			<div id="menubottom">
-				<h2>Menu</h2>
 				<a href="#top"><div class="mstop"></div></a>
 				<a href="#projeto"><div class="msproj"></div></a>
 				<a href="#curriculo"><div class="mscv"></div></i></a>
 				<a href="#contato"><div class="mscontact"></div></a>
 			</div>
 		</div>
+
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<!script src="https://maps.gstatic.com/maps-api-v3/api/js/20/10/intl/pt_br/main.js"><!/script>
+		<script src="geo.js"></script>
 
 	</body>
 
