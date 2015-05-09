@@ -93,7 +93,7 @@ body{
 }
 
 #mapa{
-	width: 80%;
+	width: 50%;
 	height: 240px;
 	box-sizing: border-box;
 	margin-top:8px;
@@ -103,7 +103,7 @@ body{
 	display: block;
 	border: #65DBEF solid 16px;
 	margin: 8px auto;
-	max-width: 80%;
+	max-width: 50%;
 }
 
 #t2{}
