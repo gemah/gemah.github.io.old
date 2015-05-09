@@ -4,7 +4,7 @@ var directionsDisplay, directionsService = new google.maps.DirectionsService();
 
 function initialize() {
 	
-	dd = new google.maps.DirectionsRenderer();
+	directionsDisplay = new google.maps.DirectionsRenderer();
 
   var mapOptions = {
   	draggable: true,
