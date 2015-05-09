@@ -28,6 +28,7 @@ function init(){
   	/* Desenhador de rota */
 
   	renderer = new google.maps.DirectionsRenderer();
+  	calcRoute();
   	renderer.setMap(map);
 
 }
@@ -57,7 +58,7 @@ function calcRoute(){
 	end = homePos;
 	req = {origin: start, desination:end, travelMode: google.maps.TravelMode.DRIVING};
 
-	directionsService.route(req, function(){
+	servicer.route(req, function(){
 		if(status == google.maps.DirectionStatus.OK){
 			renderer.setDirections(response);
 		}
