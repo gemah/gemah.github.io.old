@@ -100,6 +100,7 @@ body{
 }
 
 #window{
+	box-sizing: border-box;
 	display: block;
 	border: #65DBEF solid 16px;
 	margin: 8px auto;
