@@ -83,11 +83,11 @@ body{
 }
 
 #window{
-box-sizing: border-box;
+	box-sizing: border-box;
 	display: block;
 	border: #65DBEF solid 16px;
 	margin: 8px auto;
-	max-width: 50%;
+	max-width: 100%;
 }
 
 #t2{}
