@@ -1,7 +1,10 @@
 var map;
 var homePos = new google.maps.LatLng(-19.862532, -44.001766), visitorPos;
+var directionsDisplay, directionsService = new google.maps.DirectionsService();
 
 function initialize() {
+	
+	dd = new google.maps.DirectionsRenderer();
 
   var mapOptions = {
   	draggable: true,
@@ -29,6 +32,17 @@ function initialize() {
     // Browser doesn't support Geolocation
     handleNoGeolocation(false);
   }
+  
+  /* ROUTING */
+  var req = {origin: visitorPos, destination: homePos, travelMode: google.maps.TravelMode.DRIVING};
+  directionsService.route(request, function(result, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      directionsDisplay.setDirections(result);
+    } else {
+      alert("couldn't get directions:" + status);
+    }
+  });
+  
 }
 
 function handleNoGeolocation(errorFlag) {
