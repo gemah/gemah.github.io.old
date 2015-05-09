@@ -172,8 +172,12 @@ body{
     background-position: -64px -64px;
 }
 
+.clearable{
+  clear: none;
+}
+
 .animPortrait {
-margin: 0;
+  margin: 0 0 16 0;
   float: right;
   width: 256px;
   height: 192px;
@@ -217,6 +221,7 @@ margin: 0;
 .hoverable:active {color: #DB6559;}
 #contact .hoverable:link {color:#5955E0;}
 #contact .hoverable:hover {color: #FF897D;}
+.print-only{display: none;}
 
 h2 {
 	font-weight: normal;

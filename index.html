@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" media="screen and (max-width: 9999px)" href="style.css">
 		<link rel="stylesheet" media="handheld, screen and (max-width: 800px)" href="mobile.css">
+		<link rel="stylesheet" media="print" href="print.css">
 		<title>GEMAH ~ Personal Webpage</title>
 	</head>
 
@@ -35,14 +36,20 @@
 				<img class="imgTMob" src="img/titleMob.png" 
 				     alt="Título da página. Fonte 'Fuzzy Bear' por Jonathan Harris, gratuito para uso privado;
 				          Fonte MSX disponível em msx.org; Imagem baseada em foto de autor desconhecido.">
+				<h1 class = "print-only">GEMAH!</h1>
 
 				<!--INICIAL-->
 
 				<p>Bem vindo ao meu humilde site. Sou um estudante de Engenharia de Computação, eu também tenho interesse em jogos e arte. Este é o meu primeiro website em que me 
 				   dediquei a fazer bem feito(sério).</p>
 				<div class="animPortrait"></div>
-				<h2>Onde mais me encontrar:</h2>
-
+				<h2 class = "clearable">Onde mais me encontrar:</h2>
+				<div class="print-only">
+					<p>Facebook: https://www.facebook.com/hian.neiva.3</p>
+					<p>LinkedIn: https://www.linkedin.com/profile/view?id=381417804</p>
+					<p>Steam: http://www.steamcommunity.com/id/hian_n/</p>
+					<p>Tumblr: http://gemahbeart.tumblr.com/</p>
+				</div>
 				<a class="sprite-fb-icon" href="https://www.facebook.com/hian.neiva.3"></a>
 				<a class="sprite-linkedin-icon" href="https://www.linkedin.com/profile/view?id=381417804"></a>
 				<a class="sprite-steam-icon" href="http://www.steamcommunity.com/id/hian_n/"></a>
@@ -136,7 +143,7 @@
 				<p>Abaixo você pode ver meu currículo na íntegra:</p>
 				
 				<a class="hoverable" href="src/cvHianNeiva.pdf" target="_top">
-					<p><em>Currículo integral</em></p>
+					<p><em>Currículo integral</em><em class="print-only">. Imprima separado, por favor.</em></p>
 				</a>
 
 				<br>
@@ -150,7 +157,7 @@
 				<a class="hoverable" href="mailto:hianneiva@gmail.com">E-mail</a>
 				</p>
 				<p>Abaixo você pode verificar no mapa como chegar até minha casa.</p>
-				<p id="alert"></p>
+				<p class="print-only">Não Disponível para impressão, eu criei este estilo de página para impressão para minimizar o tanto de tinta que você vai gastar!</p>
 				<div id="mapa"></div>
 			</div>
 
