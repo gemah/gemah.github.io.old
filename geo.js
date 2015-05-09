@@ -1,55 +1,47 @@
-var mine = [-19.8634777, -44.001888199999996];
-var map;
-var posM, posV, pos = null;
-var dd, ds;
-
-function calcRoute(){
-	
-	var begin = pos;
-	var end = posM;
-	
-	var req = {
-		origin: begin, destination: end,
-		travelMode: google.maps.TravelMode.DRIVING
-	};
-	
-	ds.route(req, function(response, status){
-		if(status == google.maps.DirectionsStatus.OK){
-			dd.setDirections(response);
-		}
-	});
-	
-}
+var homePos = new google.maps.LatLng(-19.862873, -44.00211);
+var map, servicer, renderer, visitorPos;
 
 function init(){
-	
-	posM = new google.maps.LatLng(mine[0], mine[1]);
-	ds = new google.maps.DirectionsService();
-	
-	var options = {
-		draggable: true,
-		zoom: 15,
-		center: posM
-	};
-	
-	map = new google.maps.Map(document.getElementById('mapa'), options);
-	
-	var watch = navigator.geolocation.watchPosition(function(position){
-		
-		navigator.geolocation.clearWatch(watch);
-		
-		posV = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-		map.setCenter(posV);
-		pos = posV;
-		
-		calcRoute();
-		
-	});
-	
-	dd = new google.maps.DirectionsRenderer();
-	dd.setMap(map);
-	
-	
+
+	var mapOptions = {
+    	draggable: true,
+    	zoom: 15,
+    	center: homePos
+  	};
+
+	map = new google.maps.Map(document.getElementById('mapa'), mapOptions);
+
+  	/* Geolocalização */
+
+  	if(navigator.geolocation){
+  		navigator.geolocation.getCurrentPosition(function(position){
+  			visitorPos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  			var info = new google.maps.InfoWindow({
+  				map: map, position: visitorPos, content: 'Sua localização'
+  			});
+  			map.setCenter(visitorPos);
+  		}, function(){handleNoGeoLocation(true);});
+  	} else {
+  		handleNoGeoLocation(false);
+  	}
+
+}
+
+function handleNoGeoLocation(errorFlag){
+
+	var content, options, info;
+
+	if(errorFlag){
+		content = 'Erro: Serviço de Geolocalização falhou.';
+	} else {
+		content = 'Erro: Seu navegador não suporta Geolocalização!'
+	}
+
+	options = {map: map, position: homePos, content: content};
+
+	info = new google.maps.InfoWindow(options);
+	map.setCenter(info.position);
+
 }
 
 google.maps.event.addDomListener(window, 'load', init);
