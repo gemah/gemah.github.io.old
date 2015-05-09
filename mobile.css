@@ -93,7 +93,7 @@ body{
 }
 
 #mapa{
-	width: 360px;
+	width: 100%;
 	height: 240px;
 	box-sizing: border-box;
 	margin-top:8px;
