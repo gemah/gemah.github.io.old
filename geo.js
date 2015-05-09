@@ -1,5 +1,5 @@
 var homePos = new google.maps.LatLng(-19.862873, -44.00211);
-var map, servicer, renderer, visitorPos;
+var map, renderer, visitorPos, servicer = new google.maps.DirectionsService();
 
 function init(){
 
@@ -25,6 +25,11 @@ function init(){
   		handleNoGeoLocation(false);
   	}
 
+  	/* Desenhador de rota */
+
+  	renderer = new google.maps.DirectionsRenderer();
+  	renderer.setMap(map);
+
 }
 
 function handleNoGeoLocation(errorFlag){
@@ -41,6 +46,22 @@ function handleNoGeoLocation(errorFlag){
 
 	info = new google.maps.InfoWindow(options);
 	map.setCenter(info.position);
+
+}
+
+function calcRoute(){
+
+	var start, end, req;
+
+	start = visitorPos;
+	end = homePos;
+	req = {origin: start, desination:end, travelMode: google.maps.TravelMode.DRIVING};
+
+	directionsService.route(req, function(){
+		if(status == google.maps.DirectionStatus.OK){
+			renderer.setDirections(response);
+		}
+	});
 
 }
 
