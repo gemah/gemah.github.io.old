@@ -191,8 +191,8 @@ body{
 }
 
 .animPortrait {
-  margin: 0 0 16 0;
-  float: right;
+  left: 50%;
+  margin: 0 0 16 -128px;
   width: 256px;
   height: 192px;
   background: url('img/portraitAnimSprite.png');
