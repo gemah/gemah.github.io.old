@@ -82,9 +82,23 @@ body{
 	margin-top:20px;
 }
 
+#window{
+	display: block;
+	border: #65DBEF solid 16px;
+	margin: 8px auto;
+	max-width: 100%;
+}
+
+#t2{}
+#t1{}
+
 .dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 
 		   com prresença de outra classe anteror */}
 
+.thumbnail{
+	cursor: pointer;
+}
+		   
 .mstop{
 	display: inline-block;
 	background: url('img/menusprite.png') no-repeat -58px -58px;

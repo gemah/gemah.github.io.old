@@ -1,0 +1,147 @@
+/* ~Arquivo de Estilo~ */
+/* Autor: Hian Neiva */
+/* Motivação do estilo: Atender a impressões */
+
+/* ~Arquivo de Estilo~ */
+/* Autor: Hian Neiva */
+/* Motivação do estilo: MSX aesthetics */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: serif;
+	font-size: medium;
+	color: #000;
+	background-color: #fff;
+}
+
+#outer{
+	width: 100%;
+	height: 100%;
+	border: #65DBEF solid 0px;
+	box-sizing: border-box;
+}
+
+#menutop {
+	display: none;
+}
+
+#menubottom{
+	display: none;
+}
+
+#proj{
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	/*outline: #B766B5 solid 16px;*/
+}
+
+#curriculum{
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	/*outline: #3AA241 solid 16px;*/
+}
+
+#contact{
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	/*outline: #CCC35E solid 16px;*/
+}
+
+#leftspace{
+	padding: 0;
+}
+
+#mapa{
+	width: 640px;
+	height: 300px;
+	box-sizing: border-box;
+	margin-top:20px;
+}
+
+.dummy{ /* Por algum motivo os menu sprites abaixo funcionam somente 
+		   com prresença de outra classe anteror */}
+
+.print-only{display: inline;}
+		   
+.imgTitle{
+    display:none;
+    left: 0;
+    position: relative;
+}
+.imgTMob{
+    display:none;
+}
+
+.sprite-fb-icon {
+	display: none;
+	background-image: url('img/social-icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-position: 0 0;
+}
+
+.sprite-linkedin-icon {
+	display: none;
+	background-image: url('img/social-icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-position: -64px 0;
+}
+
+.sprite-steam-icon {
+	display: none;
+	background-image: url('img/social-icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-position: 0 -64px;
+}
+
+.sprite-tumblr-icon {
+	display: none;
+	background-image: url('img/social-icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-position: -64px -64px;
+}
+
+.clearable{
+  clear: none;
+}
+
+.animPortrait {
+  display: none;
+}
+
+.hoverable:link {color: #000;}
+.hoverable:visited {color: #000;}
+.hoverable:hover {color: #000;}
+.hoverable:focus {color: #000;}
+.hoverable:active {color: #000;}
+#contact .hoverable:link {color:#000;}
+#contact .hoverable:hover {color: #000;}
+
+h2 {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 150%;
+}
+em{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 100%;
+}
+ul{
+	list-style-type: square;
+}
